@@ -1,0 +1,518 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests para agregar inventario, error case No deberia agregar un inventario si el campo <raza> esta vacio 1`] = `
+<div
+  className="container-fluid px-0 px-lg-1"
+>
+  <div
+    className="jumbotron mb-0"
+  >
+    <h1
+      className="display-4 text-center text-lg-left"
+    >
+      Inventario
+    </h1>
+  </div>
+  <div />
+  <div
+    className="container-fluid mt-5"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="col-12"
+      >
+        <div
+          aria-level="1"
+          className="sc-fodVxV gbjtWJ rdt_TableHeader"
+          role="heading"
+        >
+          <div
+            className="sc-fFubgz fYvZuV"
+          >
+            
+          </div>
+          <div
+            className="sc-bkzZxe iPmElK"
+          />
+          <div
+            className="sc-hBEYos fdFxek"
+          >
+            <div
+              className="sc-bqyKva huJooB"
+            />
+            <div
+              className="sc-kstrdz hfkHbn"
+            />
+          </div>
+        </div>
+        <div
+          className="sc-hHftDr ddahQf"
+          style={Object {}}
+        >
+          <div
+            className="sc-kfzAmx bdkqKp"
+          >
+            <div
+              className="sc-bdfBwQ ggwjZM rdt_Table"
+              disabled={false}
+              role="table"
+            >
+              <div
+                className="sc-bBXqnf dMPErV"
+              >
+                <div
+                  style={
+                    Object {
+                      "padding": "24px",
+                    }
+                  }
+                >
+                  There are no records to display
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+      </div>
+    </div>
+  </div>
+  <div
+    aria-hidden="true"
+    aria-labelledby="add"
+    className="modal fade"
+    id="add"
+    role="dialog"
+    tabindex="-1"
+  >
+    <div
+      className="modal-dialog modal-dialog-centered"
+      role="document"
+    >
+      <div
+        className="modal-content"
+      >
+        <div
+          className="modal-header"
+        >
+          <h5
+            className="modal-title"
+            id="addT"
+          >
+            Añadir a inventario
+          </h5>
+          <button
+            aria-label="Close"
+            className="close"
+            data-dismiss="modal"
+            id="closeAdd"
+            type="button"
+          >
+            <span
+              aria-hidden="true"
+            >
+              ×
+            </span>
+          </button>
+        </div>
+        <div
+          className="modal-body"
+        >
+          <div
+            className="row justify-content-center"
+          >
+            <div
+              className="col-12 text-left"
+            >
+              <div
+                className="form-group"
+              >
+                <label
+                  name="Raza"
+                >
+                  Raza
+                </label>
+                <input
+                  className="form-control"
+                  id="RazaId"
+                  onChange={[Function]}
+                  placeholder="Escribir la raza"
+                  type="text"
+                />
+              </div>
+              <div
+                className="form-group"
+              >
+                <label>
+                  Número del animal
+                </label>
+                <input
+                  className="form-control"
+                  onChange={[Function]}
+                  placeholder="Escribir el número del animal"
+                  type="number"
+                />
+              </div>
+              <div
+                className="form-group"
+              >
+                <label>
+                  Edad del animal
+                </label>
+                <input
+                  className="form-control"
+                  onChange={[Function]}
+                  placeholder="Escribir la edad del animal"
+                  type="number"
+                />
+              </div>
+              <div
+                className="form-group"
+              >
+                <label>
+                  Apartado
+                </label>
+                <select
+                  className="form-control"
+                  onChange={[Function]}
+                >
+                  <option
+                    disabled={true}
+                    selected={true}
+                  >
+                    Seleccione...
+                  </option>
+                </select>
+              </div>
+            </div>
+            <div
+              className="col-12 text-left mt-2"
+            >
+              <h6>
+                Subir imagen:
+              </h6>
+            </div>
+            <div
+              className="col-10 text-center"
+            >
+              <div
+                style={
+                  Object {
+                    "borderRadius": undefined,
+                    "height": "auto",
+                    "position": "relative",
+                    "width": "auto",
+                  }
+                }
+              >
+                <div
+                  className="create-book-photo-picker _FCdzt"
+                  style={
+                    Object {
+                      "background": "#c7c6bc59",
+                      "height": "auto",
+                      "width": "auto",
+                    }
+                  }
+                >
+                  <svg
+                    className="create-book-photo-icon _1pmC5"
+                    color="#fff"
+                    fill="currentColor"
+                    height={70}
+                    size={70}
+                    stroke="currentColor"
+                    strokeWidth="0"
+                    style={
+                      Object {
+                        "color": "#fff",
+                      }
+                    }
+                    viewBox="0 0 512 512"
+                    width={70}
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8 256C8 119 119 8 256 8s248 111 248 248-111 248-248 248S8 393 8 256zm143.6 28.9l72.4-75.5V392c0 13.3 10.7 24 24 24h16c13.3 0 24-10.7 24-24V209.4l72.4 75.5c9.3 9.7 24.8 9.9 34.3.4l10.9-11c9.4-9.4 9.4-24.6 0-33.9L273 107.7c-9.4-9.4-24.6-9.4-33.9 0L106.3 240.4c-9.4 9.4-9.4 24.6 0 33.9l10.9 11c9.6 9.5 25.1 9.3 34.4-.4z"
+                    />
+                  </svg>
+                  <div
+                    className="create-book-image-input-container _1n017"
+                    style={
+                      Object {
+                        "height": "100%",
+                        "overflow": "hidden",
+                        "width": "100%",
+                      }
+                    }
+                  >
+                    <input
+                      accept="image/*"
+                      className="create-book-photo-input _2SsMH"
+                      name="photo"
+                      onChange={[Function]}
+                      onClick={[Function]}
+                      placeholder="select the book photo"
+                      style={
+                        Object {
+                          "height": "100%",
+                          "opacity": 0,
+                          "width": "100%",
+                        }
+                      }
+                      type="file"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="col-12"
+            >
+              <button
+                className="btn btn-primary btn-block"
+                onClick={[Function]}
+              >
+                Guardar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    aria-hidden="true"
+    aria-labelledby="modify"
+    className="modal fade"
+    id="modify"
+    role="dialog"
+    tabindex="-1"
+  >
+    <div
+      className="modal-dialog modal-dialog-centered"
+      role="document"
+    >
+      <div
+        className="modal-content"
+      >
+        <div
+          className="modal-header"
+        >
+          <h5
+            className="modal-title"
+            id="addT"
+          >
+            Editar inventario
+          </h5>
+          <button
+            aria-label="Close"
+            className="close"
+            data-dismiss="modal"
+            id="closeEdit"
+            type="button"
+          >
+            <span
+              aria-hidden="true"
+            >
+              ×
+            </span>
+          </button>
+        </div>
+        <div
+          className="modal-body"
+        >
+          <div
+            className="row justify-content-center"
+          >
+            <div
+              className="col-12 text-left"
+            >
+              <div
+                className="form-group"
+              >
+                <label>
+                  Raza
+                </label>
+                <input
+                  className="form-control"
+                  onChange={[Function]}
+                  placeholder="Escribir la raza"
+                  type="text"
+                  value=""
+                />
+              </div>
+              <div
+                className="form-group"
+              >
+                <label>
+                  Número del animal
+                </label>
+                <input
+                  className="form-control"
+                  onChange={[Function]}
+                  placeholder="Escribir el número del animal"
+                  type="number"
+                  value={0}
+                />
+              </div>
+              <div
+                className="form-group"
+              >
+                <label>
+                  Edad del animal
+                </label>
+                <input
+                  className="form-control"
+                  onChange={[Function]}
+                  placeholder="Escribir la edad del animal"
+                  type="number"
+                  value={0}
+                />
+              </div>
+              <div
+                className="form-group"
+              >
+                <label>
+                  Apartado
+                </label>
+                <select
+                  className="form-control"
+                  onChange={[Function]}
+                  value=""
+                >
+                  <option
+                    disabled={true}
+                    selected={true}
+                  >
+                    Seleccione...
+                  </option>
+                </select>
+              </div>
+              <div
+                className="form-group"
+              >
+                <label>
+                  Estado
+                </label>
+                <select
+                  className="form-control"
+                  onChange={[Function]}
+                  value=""
+                >
+                  <option
+                    value="en_Finca"
+                  >
+                    En Finca
+                  </option>
+                  <option
+                    value="vendido"
+                  >
+                    Vendido
+                  </option>
+                </select>
+              </div>
+            </div>
+            <div
+              className="col-12 text-left mt-2"
+            >
+              <h6>
+                Subir imagen:
+              </h6>
+            </div>
+            <div
+              className="col-10 text-center"
+            >
+              <div
+                style={
+                  Object {
+                    "borderRadius": undefined,
+                    "height": "auto",
+                    "position": "relative",
+                    "width": "auto",
+                  }
+                }
+              >
+                <div
+                  className="create-book-photo-picker _FCdzt"
+                  style={
+                    Object {
+                      "background": "#c7c6bc59",
+                      "height": "auto",
+                      "width": "auto",
+                    }
+                  }
+                >
+                  <svg
+                    className="create-book-photo-icon _1pmC5"
+                    color="#fff"
+                    fill="currentColor"
+                    height={70}
+                    size={70}
+                    stroke="currentColor"
+                    strokeWidth="0"
+                    style={
+                      Object {
+                        "color": "#fff",
+                      }
+                    }
+                    viewBox="0 0 512 512"
+                    width={70}
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8 256C8 119 119 8 256 8s248 111 248 248-111 248-248 248S8 393 8 256zm143.6 28.9l72.4-75.5V392c0 13.3 10.7 24 24 24h16c13.3 0 24-10.7 24-24V209.4l72.4 75.5c9.3 9.7 24.8 9.9 34.3.4l10.9-11c9.4-9.4 9.4-24.6 0-33.9L273 107.7c-9.4-9.4-24.6-9.4-33.9 0L106.3 240.4c-9.4 9.4-9.4 24.6 0 33.9l10.9 11c9.6 9.5 25.1 9.3 34.4-.4z"
+                    />
+                  </svg>
+                  <div
+                    className="create-book-image-input-container _1n017"
+                    style={
+                      Object {
+                        "height": "100%",
+                        "overflow": "hidden",
+                        "width": "100%",
+                      }
+                    }
+                  >
+                    <input
+                      accept="image/*"
+                      className="create-book-photo-input _2SsMH"
+                      name="photo"
+                      onChange={[Function]}
+                      onClick={[Function]}
+                      placeholder="select the book photo"
+                      style={
+                        Object {
+                          "height": "100%",
+                          "opacity": 0,
+                          "width": "100%",
+                        }
+                      }
+                      type="file"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="col-12"
+            >
+              <button
+                className="btn btn-primary btn-block"
+                onClick={[Function]}
+              >
+                Editar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

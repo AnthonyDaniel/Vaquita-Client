@@ -10,7 +10,8 @@ import uuid from 'react-uuid';
 import * as config from "../IPServidor";
 
 const Inventario = () => {
-    const { usuario } = useContext(Auth);
+    const  usuario  = useContext(Auth);
+
     const db = app.firestore();
     const [imageSrc, setImageSrc] = useState(null);
     const [imgFile, setImg] = useState(null);
@@ -402,8 +403,8 @@ const Inventario = () => {
                             <div className="row justify-content-center">
                                 <div className="col-12 text-left">
                                     <div className="form-group">
-                                        <label>Raza</label>
-                                        <input onChange={changeRaza} type="text" className="form-control" placeholder="Escribir la raza" />
+                                        <label name="Raza">Raza</label>
+                                        <input id="RazaId" onChange={changeRaza} type="text" className="form-control" placeholder="Escribir la raza" />
                                     </div>
                                     <div className="form-group">
                                         <label>Número del animal</label>

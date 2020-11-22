@@ -10,7 +10,7 @@ import uuid from 'react-uuid';
 import * as config from "../IPServidor";
 
 const Historicos = () => {
-    const { usuario } = useContext(Auth);
+    const  usuario  = useContext(Auth);
     const db = app.firestore();
     const [itsAdmin, setAdmin] = useState(false);
     const [list, setList] = useState([]);

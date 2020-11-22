@@ -13,7 +13,7 @@ const Login = ({ history }) => {
     const facebookAuthProvider = new firebase.auth.FacebookAuthProvider();
 
     const [signup, setsignup] = useState(false);
-    const { usuario } = useContext(Auth);
+    const  usuario  = useContext(Auth);
     const [error, seterror] = useState('')
 
     useEffect(() => {

@@ -8,7 +8,7 @@ import * as config from "../IPServidor";
 import uuid from 'react-uuid';
 
 const Apartado = () => {
-    const { usuario } = useContext(Auth);
+    const usuario  = useContext(Auth);
     const db = app.firestore();
     const [itsAdmin, setAdmin] = useState(false);
     const [list, setList] = useState([]);

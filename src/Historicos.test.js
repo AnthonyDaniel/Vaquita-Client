@@ -1,8 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { act } from 'react-dom/test-utils';
-import Inventario from "./components/Inventarios";
-import { create } from "react-test-renderer";
+import Historicos from "./components/Historicos";
 import { fireEvent, render, waitForElement } from '@testing-library/react'
 
 let container;
@@ -17,19 +16,20 @@ afterEach(() => {
     container = null;
 });
 
-it('can render and update a inventario', () => {
+it('can render and update a historicos', () => {
     // Prueba la primer renderización y componentDidMount
     act( () => {
-        ReactDOM.render(<Inventario />, container);
+        ReactDOM.render(<Historicos />, container);
     });
 
 });
 
 //-- ADD --
 //Error cases
-describe('Tests para agregar inventario, error case', () => {
-    test('No deberia agregar un inventario si el campo <raza> esta vacio', async () => {
-        const component = render(<Inventario />);
+describe('Tests para agregar Historicos, error case', () => {
+    test('No deberia agregar un Historicos si el campo <raza> esta vacio', async () => {
+        const component = render(<Historicos />);
         expect(component)
     })
 })
+
