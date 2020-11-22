@@ -28,13 +28,13 @@ const Navigation = (props) => {
             {usuario == null ? (
                 <NavItem className="d-block d-lg-none" style={{listStyle:"none", position:"absolute", top:"0",right:"0"}}>
                     <NavLink to="/login" className="nav-link">
-                        <i class="fas fa-sign-in-alt"></i> Login
+                        <i className="fas fa-sign-in-alt"></i> Login
                     </NavLink>
                 </NavItem>
             ) : (
                 <NavItem className="d-block d-lg-none" style={{ listStyle: "none", position: "absolute", top: "0", right: "0" }}>
                         <button onClick={() => {app.auth().signOut();    window.location.reload(false);}} className="nav-link btn">
-                        <i class="fas fa-sign-out-alt"></i> Logout
+                            <i className="fas fa-sign-out-alt"></i> Logout
                     </button>
                 </NavItem>
             )}
@@ -48,17 +48,17 @@ const Navigation = (props) => {
                       
                         <NavItem>
                             <NavLink to="/" className="nav-link">
-                                <i class="fas fa-hat-cowboy-side "></i> Inventario
+                                <i className="fas fa-hat-cowboy-side "></i> Inventario
                             </NavLink>
                         </NavItem>
                         <NavItem>
                             <NavLink to="/apartados" className="nav-link">
-                                <i class="fas fa-puzzle-piece"></i> Apartados
+                                <i className="fas fa-puzzle-piece"></i> Apartados
                             </NavLink>
                         </NavItem>
                         <NavItem>
                             <NavLink to="/historicos" className="nav-link">
-                                <i class="fas fa-history"></i> Históricos
+                                <i className="fas fa-history"></i> Históricos
                             </NavLink>
                         </NavItem>
                             
@@ -66,13 +66,13 @@ const Navigation = (props) => {
                         {usuario == null ? (
                             <NavItem>
                                 <NavLink to="/login" className="nav-link">
-                                    <i class="fas fa-sign-in-alt"></i> Login
+                                    <i className="fas fa-sign-in-alt"></i> Login
                                 </NavLink>
                             </NavItem>
                         ) : (
                                 <NavItem>
                                     <button onClick={() => { app.auth().signOut(); window.location.reload(false); }}  className="nav-link btn">
-                                        <i class="fas fa-sign-out-alt"></i> Logout
+                                        <i className="fas fa-sign-out-alt"></i> Logout
                                     </button>
                                 </NavItem>
                             )}
@@ -90,7 +90,7 @@ const Navigation = (props) => {
                                 <div className="row d-flex flex-column justify-content-center align-items-center">
                                         <div>
                                             <div>
-                                                <i class="fas fa-hat-cowboy-side fa-2x"></i>
+                                            <i className="fas fa-hat-cowboy-side fa-2x"></i>
                                             </div>
                                         </div>
                                     <div>Inventario</div>
@@ -102,7 +102,7 @@ const Navigation = (props) => {
                                 <div className="row d-flex flex-column justify-content-center align-items-center">
                                     <div>
                                         <div>
-                                            <i class="fas fa-puzzle-piece fa-2x"></i>
+                                            <i className="fas fa-puzzle-piece fa-2x"></i>
                                         </div>
                                     </div>
                                     <div>Apartados</div>
@@ -114,7 +114,7 @@ const Navigation = (props) => {
                                 <div className="row d-flex flex-column justify-content-center align-items-center">
                                     <div>
                                         <div>
-                                            <i class="fas fa-history fa-2x"></i>
+                                            <i className="fas fa-history fa-2x"></i>
                                         </div>
                                     </div>
                                     <div>Históricos</div>
