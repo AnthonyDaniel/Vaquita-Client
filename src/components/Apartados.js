@@ -93,7 +93,7 @@ const Apartado = () => {
                                     <td className="text-center">{mt2}</td>
                                     {itsAdmin ? (
                                         <td className="text-center">
-                                            <button type="button" class="btn btn-danger" onClick={() => {
+                                            <button type="button" className="btn btn-danger" onClick={() => {
                                                 Swal.fire({
                                                     text: "¿ Estas seguro de eliminar este apartado ?",
                                                     icon: 'warning',
@@ -130,7 +130,7 @@ const Apartado = () => {
                                                     }
                                                 })
                                             }
-                                            }><i class="fas fa-trash-alt"></i></button>
+                                            }><i className="fas fa-trash-alt"></i></button>
                                         </td>
                                     ) : (
                                         <td hidden>
@@ -155,13 +155,13 @@ const Apartado = () => {
                         <div className="modal-body">
                             <div className="row justify-content-center">
                                 <div className="col-12 text-left">
-                                    <div class="form-group">
+                                    <div className="form-group">
                                         <label>Nombre de Apartado</label>
-                                        <input onChange={changeName} type="text" class="form-control" placeholder="Escribir el nombre del apartado" />
+                                        <input onChange={changeName} type="text" className="form-control" placeholder="Escribir el nombre del apartado" />
                                     </div>
-                                    <div class="form-group">
+                                    <div className="form-group">
                                         <label>Mt2</label>
-                                        <input onChange={changeMt2} type="number" class="form-control" placeholder="Escribir los mt2" />
+                                        <input onChange={changeMt2} type="number" className="form-control" placeholder="Escribir los mt2" />
                                     </div>
                                 </div>
                                 <div className="col-12">

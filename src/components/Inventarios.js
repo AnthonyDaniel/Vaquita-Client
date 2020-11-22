@@ -322,7 +322,7 @@ const Inventario = () => {
                             })
                         }
                         }  style={{ position: "absolute", left: "20%", zIndex: 2 }}>
-                        <i class="fas fa-compress-arrows-alt fa-2x"></i>
+                        <i className="fas fa-compress-arrows-alt fa-2x"></i>
                     </button>
                     <button id="editM" className="btn btn-secondary rounded-circle mr-lg-5" data-toggle="modal" data-target="#modify" hidden>
                     </button>
@@ -348,7 +348,7 @@ const Inventario = () => {
                         })
                     }
                     } style={{ position: "absolute", left: "67%", zIndex: 2 }} >
-                        <i class="fas fa-expand-arrows-alt fa-2x"></i>
+                        <i className="fas fa-expand-arrows-alt fa-2x"></i>
                     </button>
                     <button className="btn btn-secondary rounded-circle mr-lg-5" style={{ position: "absolute", right: "0", zIndex: 2 }} onClick={() => {
                         Swal.fire({
@@ -365,7 +365,7 @@ const Inventario = () => {
                         })
                     }
                     }>
-                        <i class="fas fa-trash-alt fa-2x"></i>
+                        <i className="fas fa-trash-alt fa-2x"></i>
                     </button>
                 </div>
             ):(
@@ -401,21 +401,21 @@ const Inventario = () => {
                         <div className="modal-body">
                             <div className="row justify-content-center">
                                 <div className="col-12 text-left">
-                                    <div class="form-group">
+                                    <div className="form-group">
                                         <label>Raza</label>
-                                        <input onChange={changeRaza} type="text" class="form-control" placeholder="Escribir la raza" />
+                                        <input onChange={changeRaza} type="text" className="form-control" placeholder="Escribir la raza" />
                                     </div>
-                                    <div class="form-group">
+                                    <div className="form-group">
                                         <label>Número del animal</label>
-                                        <input onChange={changeNumero} type="number" class="form-control" placeholder="Escribir el número del animal" />
+                                        <input onChange={changeNumero} type="number" className="form-control" placeholder="Escribir el número del animal" />
                                     </div>
-                                    <div class="form-group">
+                                    <div className="form-group">
                                         <label>Edad del animal</label>
-                                        <input onChange={changeEdad} type="number" class="form-control" placeholder="Escribir la edad del animal" />
+                                        <input onChange={changeEdad} type="number" className="form-control" placeholder="Escribir la edad del animal" />
                                     </div>
-                                    <div class="form-group">
+                                    <div className="form-group">
                                         <label>Apartado</label>
-                                        <select onChange={changeIdApartado} class="form-control" >
+                                        <select onChange={changeIdApartado} className="form-control" >
                                             <option selected disabled>Seleccione...</option>
                                             {list.map(
                                                 ({ id, nombre, mt2 }) => (
@@ -541,21 +541,21 @@ const Inventario = () => {
                         <div className="modal-body">
                             <div className="row justify-content-center">
                                 <div className="col-12 text-left">
-                                    <div class="form-group">
+                                    <div className="form-group">
                                         <label>Raza</label>
-                                        <input onChange={changeRaza} value={raza} type="text" class="form-control" placeholder="Escribir la raza" />
+                                        <input onChange={changeRaza} value={raza} type="text" className="form-control" placeholder="Escribir la raza" />
                                     </div>
-                                    <div class="form-group">
+                                    <div className="form-group">
                                         <label>Número del animal</label>
-                                        <input onChange={changeNumero} value={numero} type="number" class="form-control" placeholder="Escribir el número del animal" />
+                                        <input onChange={changeNumero} value={numero} type="number" className="form-control" placeholder="Escribir el número del animal" />
                                     </div>
-                                    <div class="form-group">
+                                    <div className="form-group">
                                         <label>Edad del animal</label>
-                                        <input onChange={changeEdad} value={edad} type="number" class="form-control" placeholder="Escribir la edad del animal" />
+                                        <input onChange={changeEdad} value={edad} type="number" className="form-control" placeholder="Escribir la edad del animal" />
                                     </div>
-                                    <div class="form-group">
+                                    <div className="form-group">
                                         <label>Apartado</label>
-                                        <select onChange={changeIdApartado} value={idApartado} class="form-control" >
+                                        <select onChange={changeIdApartado} value={idApartado} className="form-control" >
                                             <option selected disabled>Seleccione...</option>
                                             {list.map(
                                                 ({ id, nombre, mt2 }) => (
@@ -563,9 +563,9 @@ const Inventario = () => {
                                                 ))}
                                         </select>
                                     </div>
-                                    <div class="form-group">
+                                    <div className="form-group">
                                         <label>Estado</label>
-                                        <select onChange={changeEState} class="form-control"  value={state}>
+                                        <select onChange={changeEState} className="form-control"  value={state}>
                                             <option value="en_Finca">En Finca</option>
                                             <option value="vendido">Vendido</option>
                                         </select>
