@@ -6,6 +6,7 @@ import { Auth } from "../services/AuthContext";
 import Swal from 'sweetalert2'
 import "../App.css";
 import icono from "../assets/icono.png";
+import * as config from "../IPServidor";
 
 const Login = ({ history }) => {
     const googleAuthProvider = new firebase.auth.GoogleAuthProvider();
@@ -29,28 +30,6 @@ const Login = ({ history }) => {
             .auth()
             .signInWithEmailAndPassword(usuario.value, clave.value)
             .then(result => {
-                console.log(result);
-                
-                var data = {
-                    email:"",
-                    role:""
-                }
-
-                data.email = result.user.email;
-                data.role = 0
-
-                const requestOptions = {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify(data)
-                };
-
-                fetch('http://localhost:8080/user', requestOptions)
-                    .then(response => response.json())
-                    .then(data => console.log(data));
-
-                    
-
                 Swal.fire({
                     title: 'Bienvenido a Vaquita',
                     text: 'Has iniciado sesión correctamente!!',
@@ -82,8 +61,30 @@ const Login = ({ history }) => {
                     timer: 500
                 });
 
+
                 console.log(result);
-                
+
+                var data = {
+                    email: "",
+                    role: ""
+                }
+
+                data.email = result.user.email;
+                data.role = 0;
+
+                console.log("IPSERVER: " + config.IP);
+                console.log(data);
+
+                const requestOptions = {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(data)
+                };
+
+                fetch(config.IP+'/user', requestOptions)
+                    .then(response => response.json())
+                    .then(data => console.log(data));
+
                 history.push("/");
             })
             .catch(error => {
@@ -98,17 +99,17 @@ const Login = ({ history }) => {
     }
     return (
         <div className="container-fluid">
-            <div class="wrapper fadeInDown">
+            <div className="wrapper fadeInDown">
                 <div id="formContent">
-                <div class="fadeIn first">
+                    <div className="fadeIn first">
                         <img src={icono} id="icon" alt="User Icon" />
-                </div>
-                <div id="formFooter">
-                    <p>Iniciar sesión</p>
+                    </div>
+                    <div id="formFooter">
+                        <p>Iniciar sesión</p>
                         <button className="btn btn-default  fa-3x text-center underlineHover">
-                            <i class="fab fa-google" style={{ color: "var(--text)" }} onClick={() => socialLogin(googleAuthProvider)}></i>
+                            <i className="fab fa-google" style={{ color: "var(--text)" }} onClick={() => socialLogin(googleAuthProvider)}></i>
                         </button>
-                </div>
+                    </div>
                 </div>
             </div>
         </div>

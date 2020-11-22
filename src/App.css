@@ -160,3 +160,17 @@
 a{
   color: #000000;
 }
+
+.create-book-image-preview-icon-container{
+  z-index: 100000000 !important;
+}
+
+.create-book-image-preview-container{
+  position: inherit !important;
+}
+
+.create-book-photo-input{
+  position: absolute !important;
+  top: 0;
+  left: 0;
+}
