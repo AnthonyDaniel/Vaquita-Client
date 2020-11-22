@@ -5,7 +5,6 @@ export const Auth = React.createContext();
 
 export const AuthContext = ({ children }) => {
   const [usuario, setUsuario] = useState(null);
-
   useEffect(() => {
     app.auth().onAuthStateChanged(function (user) {
       setUsuario(user);
