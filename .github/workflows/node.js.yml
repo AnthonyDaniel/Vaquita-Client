@@ -1,30 +1,19 @@
-name: CI/CD
+name: Continuous Integration
 
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+on: [pull_request]
 
 jobs:
-  build:
+  buildAndTest:
+    name: Build and Test
     runs-on: ubuntu-latest
-    
-    strategy:
-      matrix:
-        node-version: [12.13.1]
-
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
+      - uses: actions/checkout@v1
 
-    - name: Set up Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
-      with:
-        node-version: ${{ matrix.node-version }}
+      - name: Install dependencies
+        run: yarn
 
-    - name: Installar
-      run: npm install
+      - name: Build
+        run: yarn build
 
-    - name: Build
-      run: npm run build
+      - name: Test
+        run: yarn test --watchAll=false
