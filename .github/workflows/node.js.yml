@@ -1,7 +1,11 @@
 name: Continuous Integration
 
-on: [pull_request]
-
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+    
 jobs:
   buildAndTest:
     name: Build and Test
