@@ -15,9 +15,6 @@ jobs:
 
       - name: Install dependencies
         run: yarn
-        
-      - name: Test
-        run: yarn test
 
       - name: Build
         run: CI=false && yarn build
