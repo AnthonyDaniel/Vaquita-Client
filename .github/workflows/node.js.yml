@@ -2,9 +2,9 @@ name: Continuous Integration
 
 on:
   push:
-    branches: [ main ]
+    branches: [ main,dev ]
   pull_request:
-    branches: [ main ]
+    branches: [ main,dev]
     
 jobs:
   buildAndTest:
@@ -15,6 +15,9 @@ jobs:
 
       - name: Install dependencies
         run: yarn
+        
+      - name: Test
+        run: yarn test
 
       - name: Build
         run: CI=false && yarn build
